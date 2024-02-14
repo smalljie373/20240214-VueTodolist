@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .form-label{
+        @apply block text-sm font-medium leading-6 text-gray-900;
+    }
+    .form-control{
+        @apply block w-full rounded-md border-0 p-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+    }
+    .form-check{
+        @apply block pl-6 min-h-6
+    }
+    .btn {
+        @apply inline-block leading-6 font-normal text-center no-underline cursor-pointer align-middle select-none py-2 px-2 transition ease-in-out delay-[20ms]
+    }
+    .nav{
+        @apply flex flex-wrap pl-0 mb-0 list-none
+    }
+    .options{
+        @apply w-1/3 py-4 border-b-2 text-center transition ease-in-out delay-[20ms]  hover:text-red-600 hover:border-gray-900 active:border-gray-900 border-gray-500 cursor-pointer
+    }
+    .active{
+        @apply border-gray-900 text-red-600
+    }
+}
